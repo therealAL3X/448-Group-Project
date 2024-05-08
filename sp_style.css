@@ -1,0 +1,278 @@
+/* Main Page CSS */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-image: url(Images/Virtual_meeting.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 700px;
+  position: relative;
+}
+
+/* Menu */
+.menubar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.menubar nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menubar a {
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+/* UMBC Logo */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  opacity: 0.9;
+}
+
+/* Main Content */
+.container {
+  box-sizing: border-box;
+}
+
+.page-details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: calc(100% - 240px);
+}
+
+.page-details h1 {
+  color: #ffa300;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.page-details h2 {
+  color: white;
+  font-size: 25px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.page-details p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.main-info-box-1 {
+  padding: 0 auto;
+  border-color: #005682;
+  border-radius: 20;
+  border-width: thick;
+}
+
+/* Join Us Button */
+#join-us {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#join-us a {
+  font-weight: bold;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+#join-us a:hover {
+  background-color: lightgray;
+}
+
+/* main body content */
+h2 {
+  width: 80%;
+  max-width: 1280px;
+  text-align: center;
+  letter-spacing: 0;
+  text-indent: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.1;
+  display: block;
+}
+
+/* This is for the three boxes and stuff up top :P */
+.top-benefits {
+  max-width: 1280px;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  border-radius: 15;
+  display: flex;
+}
+
+.top-benefits .benefits {
+  margin: 20px 20px;
+  padding: 0 auto;
+  justify-content: center;
+  font-weight: 600;
+  line-height: 24px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 15px;
+}
+
+.top-benefits .benefits p {
+  margin: 20px 20px;
+  padding: 0 auto;
+}
+
+.top-benefits .benefits img {
+  height: 200px;
+  background-position: 50%;
+  height: 200px;
+  background-size: contain;
+  margin: 20px 20px;
+  padding: 0 auto;
+  border-radius: 10px;
+}
+
+.grow {
+  max-width: 1280px;
+  padding: 0 auto;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.grow p {
+  margin: 20px 20px;
+  padding: auto;
+  justify-content: center;
+  font-weight: 600;
+  line-height: 24px;
+  position: relative;
+  display: flex;
+}
+
+/* review boxes */
+.reviews {
+  max-width: 1280px;
+  padding: 0 auto;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  border-radius: 15;
+  display: flex;
+  align-items: center;
+}
+
+.reviews p {
+  padding: 20px;
+  margin: 0;
+  justify-content: center;
+}
+
+.reviews #review {
+  margin: 20px 20px;
+  padding: 0 auto;
+  justify-content: center;
+  align-items: center;
+
+  line-height: 24px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 15px;
+}
+
+.reviews img {
+  width: 75%;
+  height: 75%;
+  padding: 20px 20px;
+  margin: 0 auto;
+  background-position: 50%;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-size: contain;
+  display: block;
+}
+
+.block-random {
+  text-align: center;
+  color: white;
+  border: 20px solid #ffa300;
+  background-color: #ffa300;
+  justify-content: center;
+  padding: 80px 15px;
+
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.bottom {
+  position: relative;
+  display: block;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.bottom img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: inline-flexbox;
+  position: absolute;
+  bottom: 45px;
+  left: 20px;
+  opacity: 0.9;
+}
+
+.bottom .social-media-footer h5 {
+  text-align: right;
+  position: relative;
+}
