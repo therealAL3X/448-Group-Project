@@ -21,11 +21,10 @@ IS 448
         <a href="findAgroup.html">Find a Group</a>
         <a href="sp_about.htm">About Us</a>
         <a href="contactUs.html">Contact</a>
-        <!-- Link positioning for Login/Logout -->
         <?php
         session_start();
         if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-          echo '<a href="logout.php" class="logout-button">Logout</a>'; // Ensure it uses the same class as before for styling
+          echo '<a href="logout.php" class="logout-button">Logout</a>'; // Logout button
         } else {
           echo '<a href="login.html">Login</a>';
         }
@@ -44,7 +43,6 @@ IS 448
       }
       ?>
       <div id="join-us">
-        <!-- Displaying Logout within the context of other links -->
         <?php
         if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
           echo '<a href="logout.php" class="logout-button">Logout</a>'; // Logout button

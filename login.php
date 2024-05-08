@@ -19,15 +19,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $password = mysqli_real_escape_string($conn, $_POST['password']);
 
-    // Update your SELECT statement to include the username
     $sql = "SELECT first_name, username, password FROM credentials WHERE email = '$email'";
     $result = mysqli_query($conn, $sql);
     if ($result && mysqli_num_rows($result) > 0) {
         $row = mysqli_fetch_assoc($result);
         if ($row['password'] === $password) {
             $_SESSION['loggedin'] = true;
-            $_SESSION['firstname'] = $row['first_name'];  // Store first name in session
-            $_SESSION['username'] = $row['username'];  // Also store username in session
+            $_SESSION['firstname'] = $row['first_name']; 
+            $_SESSION['username'] = $row['username'];
             header("Location: sp_main.php");
             exit;
         } else {
