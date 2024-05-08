@@ -136,7 +136,7 @@ IS 448
       <h1>What are you waiting for?</h1>
       <h3>Join us NOW!</h3>
       <div id="join-us">
-        <a href="https://webauth.umbc.edu">Log into MyUMBC</a>
+        <a href="login.html">Login</a>
       </div>
 
       <!--Footer-->
